@@ -17,7 +17,10 @@ export function SignIn() {
       </div>
 
       <p className="max-w-[140px] text-sm leading-snug">
-        <a href="#" className="underline transition-colors hover:text-gray-50">
+        <a
+          href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
+          className="underline transition-colors hover:text-gray-50"
+        >
           Crie sua conta
         </a>{' '}
         e salve suas memórias!
