@@ -10,10 +10,6 @@ export function SignIn() {
         >
           <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z"></path>
         </svg>
-        {/* <span
-          aria-hidden="true"
-          className="absolute bottom-0 right-0 h-2 w-2 rounded bg-green-500 ring ring-white"
-        ></span> */}
       </div>
 
       <p className="max-w-[140px] text-sm leading-snug">
