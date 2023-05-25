@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 import logo from '../assets/logo.svg'
 
 export function Hero() {
@@ -16,7 +18,10 @@ export function Hero() {
           com o mundo!
         </p>
 
-        <button className="group relative flex h-[2.8em] items-center overflow-hidden rounded-[0.9em] bg-red-400 p-[0.35em] pl-[1.2em] pr-[3.3em] font-semibold leading-[0.05em] text-gray-900 shadow-[inset_0_0_1.6em_-0.6em_#714da6]">
+        <Link
+          href="/memories/new"
+          className="group relative flex h-[2.8em] w-max items-center overflow-hidden rounded-[0.9em] bg-red-400 p-[0.35em] pl-[1.2em] pr-[3.3em] font-semibold leading-[0.05em] text-gray-900 shadow-[inset_0_0_1.6em_-0.6em_#714da6]"
+        >
           {' '}
           Cadastrar lembrança
           <div className="absolute right-[0.3em] ml-[1em] flex h-[2.2em] w-[2.2em] items-center justify-center rounded-[0.7em] bg-gray-50 transition-all duration-300 group-hover:w-[calc(100%-0.6em)] group-active:scale-95">
@@ -34,7 +39,7 @@ export function Hero() {
               ></path>
             </svg>
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   )
