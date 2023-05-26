@@ -7,6 +7,20 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+  background: #0f0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+}
+
 .custom-checkbox {
   cursor: pointer;
   user-select: none;

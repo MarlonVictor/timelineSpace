@@ -11,7 +11,6 @@ export function MediaPicker() {
 
     if (!files) return
 
-    console.log(files)
     const previewURL = URL.createObjectURL(files[0])
 
     if (files[0].type.includes('image')) {
@@ -27,8 +26,8 @@ export function MediaPicker() {
     <>
       <input
         type="file"
-        name="media"
-        id="media"
+        name="coverUrl"
+        id="coverUrl"
         className="invisible h-0 w-0"
         accept="image/*,video/*"
         onChange={onMediaSelected}
